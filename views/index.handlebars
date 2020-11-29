@@ -1,7 +1,9 @@
 <h1>burgers</h1>
 <ul class="display_burger">
     {{#each burger}}
-        <p>{{burger_name}}<button>Devour it!</button></p>
+        {{#unless devoured}}
+            <p>{{this.id}} {{this.burger_name}}<button>Devour it!</button></p>
+        {{/unless}}
     {{/each}}
 </ul>
 <ul class="display_devour">
