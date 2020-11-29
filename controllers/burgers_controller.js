@@ -3,11 +3,11 @@ const router = express.Router();
 const burger = require('../models/burger.js');
 
 router.get('/', function(req, res){
-    //function goes here
+    res.render("index")
 })
 
 router.post("/api/burgers", function(req,res){
-    //function goes here
+    res.json("posting")
 })
 
 
