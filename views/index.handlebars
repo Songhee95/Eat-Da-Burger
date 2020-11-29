@@ -1,5 +1,9 @@
 <h1>burgers</h1>
-<div class="display_burger"></div>
+<ul class="display_burger">
+    {{#each burger}}
+        <p>{{burger_name}}</p>
+    {{/each}}
+</ul>
 
 <form>  
     <input class="burgerInput" type="text">
