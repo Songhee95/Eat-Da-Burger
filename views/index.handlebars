@@ -1,11 +1,14 @@
 <h1>burgers</h1>
 <ul class="display_burger">
     {{#each burger}}
-        <p>{{burger_name}}</p>
+        <p>{{burger_name}}<button>Devour it!</button></p>
     {{/each}}
+</ul>
+<ul class="display_devour">
 </ul>
 
 <form>  
     <input class="burgerInput" type="text">
     <button type="submit" class="submit">submit</button>
+    <p>Enter a burger you want to eat Click the "Submit" button</p>
 </form>

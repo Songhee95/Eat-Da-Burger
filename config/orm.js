@@ -8,7 +8,7 @@ const orm = {
             cb(res);
         })
     },
-    insertOne : function(input){
+    insertOne : function(input,cb){
         var query = "INSERT INTO burgers(burger_name) VALUES(?)";
         connection.query(query,input, (err, res)=>{
             if(err) throw err;

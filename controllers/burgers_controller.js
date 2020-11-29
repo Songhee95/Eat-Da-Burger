@@ -7,18 +7,17 @@ router.get('/', function(req, res){
         var burgerObj = {
             burger: data
         };
-        console.log(burgerObj);
         res.render("index", burgerObj)
     })
 })
-// router.post("/api/burgers", function(req,res){
-//     res.json("posting");
-//     //burger.selectAll();
-// })
 
-// router.get("/api/burgers", function(req,res){
-//     //res.send(data);
-// })
+router.post("/api/burgers", function(req,res){
+    var data = req.body.input;
+    console.log(data);
+    burger.insertOne(data, res =>{
+        console.table(res);
+    })
+})
 
 
 module.exports = router;

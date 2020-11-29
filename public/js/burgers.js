@@ -1,7 +1,6 @@
 $(function(){
-    $(".submit").on("click", (event) =>{
+    $(".submit").on("click", () =>{
         console.log('button clicked!!')
-        event.preventDefault();
         const userInput = $(".burgerInput").val();
         console.log(userInput);
         const transferData = {
@@ -13,7 +12,6 @@ $(function(){
             data: transferData
         }).then(
             function(){
-                console.log("need to create new burger list");
                 location.reload();
             }
         )
