@@ -1,9 +1,11 @@
 const orm = require('../config/orm.js');
 
 const burger = {
-    something: function(){
-        //function goes here;
+    selectAll: function(){
+       orm.selectAll(res =>{
+           console.table(res);
+       })
     }
 }
 
-module.export = burger;
+module.exports = burger;
