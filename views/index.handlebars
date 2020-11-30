@@ -3,14 +3,22 @@
     <ul class="display_burger">
         {{#each burger}}
         {{#unless devoured}}
-        <li class="burger_list">
-            {{this.id}} {{this.burger_name}}
-            <button class="devour_btn btn btn-sm btn-secondary" data-id="{{this.id}}">Devour it!</button>
-        </li>
+            <li class="burger_list">
+                {{this.id}} {{this.burger_name}}
+                <button class="devour_btn btn btn-sm btn-secondary" data-id="{{this.id}}">Devour it!</button>
+            </li>
         {{/unless}}
         {{/each}}
     </ul>
     <ul class="display_devour">
+        {{#each burger}}
+            {{#if devoured}}
+                <li class="devour_list">
+                    {{this.id}} {{this.burger_name}}
+                    <button class="delete_btn btn btn-sm btn-danger" data-id="{{this.id}}">Delete</button>
+                </li>
+            {{/if}}
+        {{/each}}
     </ul>
 
     <form>
