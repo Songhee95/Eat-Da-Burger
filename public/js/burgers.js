@@ -25,11 +25,8 @@ $(function(){
         $.ajax("/api/devour", {
             type: "POST",
             data: data
-        }).then(
-            function(){
-                location.reload();
-            }
-        )   
+        })   
+        location.reload();
     })
 
     $(".delete_btn").on('click', (event)=>{
@@ -40,8 +37,7 @@ $(function(){
         $.ajax("/api/delete", {
             type: "POST",
             data: data
-        }).then(()=>{
-            location.reload();
         })
+        location.reload();
     })
 })
