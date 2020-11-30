@@ -31,4 +31,17 @@ $(function(){
             }
         )   
     })
+
+    $(".delete_btn").on('click', (event)=>{
+        var dataId = $(event.target).data("id");
+        var data = {
+            dataId : dataId
+        } 
+        $.ajax("/api/delete", {
+            type: "POST",
+            data: data
+        }).then(()=>{
+            location.reload();
+        })
+    })
 })

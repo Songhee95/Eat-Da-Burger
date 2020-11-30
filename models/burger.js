@@ -15,6 +15,11 @@ const burger = {
         orm.updateOne(where, res =>{
             cb(res);
         })
+    },
+    deleteOne: function(where, cb){
+        orm.deleteOne(where, res =>{
+            cb(res);
+        })
     }
 }
 

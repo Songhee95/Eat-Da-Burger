@@ -22,6 +22,13 @@ const orm = {
             if(err) throw err;
             cb(res);
         })
+    },
+    deleteOne : function(where, cb){
+        var query = "DELETE FROM burgers WHERE id =?";
+        connection.query(query, [where], (err, res) =>{
+            if(err) throw err;
+            cb(res);
+        })
     }
 }
 

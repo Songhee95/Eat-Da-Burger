@@ -20,9 +20,15 @@ router.post("/api/burgers", function(req,res){
 
 router.post("/api/devour", function(req,res){
     var id = req.body.dataId;
-    var data =id;
-    burger.updateOne(data, res =>{
+    burger.updateOne(id, res =>{
         console.table(res);
+    })
+})
+
+router.post("/api/delete", function(req,res){
+    var id = req.body.dataId;
+    burger.deleteOne(id, res =>{
+        console.table(res)
     })
 })
 
