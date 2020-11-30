@@ -1,0 +1,14 @@
+body{
+    background-image: url("../image/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover
+}
+.title{
+    margin: 30px 0;
+}
+.em{
+    font-size: 100px;
+}
+.submit{
+    margin: 20px 0 10px 0;
+}

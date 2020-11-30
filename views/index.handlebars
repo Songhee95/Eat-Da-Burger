@@ -1,5 +1,9 @@
 <div class='container text-center'>
-    <h1>Eat-Da-Burger</h1>
+    <div class="title">
+        <h1>Eat-Da-Burger
+        <i class="em em-hamburger" aria-role="presentation" aria-label="HAMBURGER"></i>
+        </h1>
+    </div>
     <div class="row justify-content-around">
         <div class="display_burger col-4">
             {{#each burger}}
@@ -24,8 +28,10 @@
     </div>
 
     <form>
-        <input class="burgerInput" type="text">
-        <button type="submit" class="submit btn-primary">submit</button>
+        <div class="submit">
+            <input class="burgerInput" type="text">
+            <button type="submit" class="submit btn-primary">submit</button>
+        </div>
         <p>Enter a burger you want to eat Click the "Submit" button</p>
     </form>
 </div>
