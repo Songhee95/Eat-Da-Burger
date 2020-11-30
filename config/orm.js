@@ -5,6 +5,7 @@ const orm = {
         var query = "SELECT * FROM "+table;
         connection.query(query, (err, res) =>{
             if(err) throw err;
+            console.table(res);
             cb(res);
         })
     },
@@ -15,8 +16,12 @@ const orm = {
             cb(res);
         })
     },
-    updateOne : function(){
-        //function goes here
+    updateOne : function(where, cb){
+        var query = "UPDATE burgers SET devoured=true WHERE id=?"
+        connection.query(query, where, (err, res)=>{
+            if(err) throw err;
+            cb(res);
+        })
     }
 }
 

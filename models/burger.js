@@ -10,6 +10,11 @@ const burger = {
         orm.insertOne(data, res =>{
             cb(res);
         })
+    },
+    updateOne: function(where, cb){
+        orm.updateOne(where, res =>{
+            cb(res);
+        })
     }
 }
 

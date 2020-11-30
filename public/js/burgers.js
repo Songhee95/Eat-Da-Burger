@@ -18,8 +18,17 @@ $(function(){
     })
 
     $('.devour_btn').on('click', (event)=>{
-        var dataId = $(event.target).data("id")
-        console.log(dataId)
-        console.log("devour button clicked")
+        var dataId = $(event.target).data("id");
+        var data = {
+            dataId : dataId
+        }
+        $.ajax("/api/devour", {
+            type: "POST",
+            data: data
+        }).then(
+            function(){
+                location.reload();
+            }
+        )   
     })
 })

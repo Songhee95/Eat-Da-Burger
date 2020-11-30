@@ -13,11 +13,17 @@ router.get('/', function(req, res){
 
 router.post("/api/burgers", function(req,res){
     var data = req.body.input;
-    console.log(data);
     burger.insertOne(data, res =>{
         console.table(res);
     })
 })
 
+router.post("/api/devour", function(req,res){
+    var id = req.body.dataId;
+    var data =id;
+    burger.updateOne(data, res =>{
+        console.table(res);
+    })
+})
 
 module.exports = router;
