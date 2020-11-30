@@ -1,16 +1,21 @@
-<h1>burgers</h1>
-<ul class="display_burger">
-    {{#each burger}}
+<div class='container'>
+    <h1>burgers</h1>
+    <ul class="display_burger">
+        {{#each burger}}
         {{#unless devoured}}
-            <p>{{this.id}} {{this.burger_name}}<button>Devour it!</button></p>
+        <li class="burger_list">
+            {{this.id}} {{this.burger_name}}
+            <button class="devour_btn" data-id="{{this.id}}">Devour it!</button>
+        </li>
         {{/unless}}
-    {{/each}}
-</ul>
-<ul class="display_devour">
-</ul>
+        {{/each}}
+    </ul>
+    <ul class="display_devour">
+    </ul>
 
-<form>  
-    <input class="burgerInput" type="text">
-    <button type="submit" class="submit">submit</button>
-    <p>Enter a burger you want to eat Click the "Submit" button</p>
-</form>
+    <form>
+        <input class="burgerInput" type="text">
+        <button type="submit" class="submit">submit</button>
+        <p>Enter a burger you want to eat Click the "Submit" button</p>
+    </form>
+</div>

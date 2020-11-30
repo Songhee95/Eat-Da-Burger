@@ -16,4 +16,10 @@ $(function(){
             }
         )
     })
+
+    $('.devour_btn').on('click', (event)=>{
+        var dataId = $(event.target).data("id")
+        console.log(dataId)
+        console.log("devour button clicked")
+    })
 })
