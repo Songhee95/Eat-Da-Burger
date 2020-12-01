@@ -8,17 +8,8 @@
     "start": "node server.js",
     "dev": "nodemon server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Songhee95/Eat-Da-Burger.git"
-  },
-  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Songhee95/Eat-Da-Burger/issues"
-  },
-  "homepage": "https://github.com/Songhee95/Eat-Da-Burger#readme",
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0",
