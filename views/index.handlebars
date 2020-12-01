@@ -1,37 +1,29 @@
-<div class='container text-center'>
-    <div class="title">
-        <h1>Eat-Da-Burger
-        <i class="em em-hamburger" aria-role="presentation" aria-label="HAMBURGER"></i>
-        </h1>
-    </div>
-    <div class="row justify-content-around">
-        <div class="display_burger col-4">
-            {{#each burger}}
-            {{#unless devoured}}
-                <p class="burger_list alert alert-warning">
+<div class='container'>
+    <h1>burgers</h1>
+    <ul class="display_burger">
+        {{#each burger}}
+        {{#unless devoured}}
+            <li class="burger_list">
+                {{this.id}} {{this.burger_name}}
+                <button class="devour_btn btn btn-sm btn-secondary" data-id="{{this.id}}">Devour it!</button>
+            </li>
+        {{/unless}}
+        {{/each}}
+    </ul>
+    <ul class="display_devour">
+        {{#each burger}}
+            {{#if devoured}}
+                <li class="devour_list">
                     {{this.id}} {{this.burger_name}}
-                    <button class="devour_btn btn btn-sm btn-secondary" data-id="{{this.id}}">Devour it!</button>
-                </p>
-            {{/unless}}
-            {{/each}}
-        </div>
-        <div class="display_devour col-4">
-            {{#each burger}}
-                {{#if devoured}}
-                    <p class="devour_list alert alert-secondary">
-                        {{this.id}} {{this.burger_name}}
-                        <button class="delete_btn btn btn-sm btn-danger" data-id="{{this.id}}">Delete</button>
-                    </p>
-                {{/if}}
-            {{/each}}
-        </div>
-    </div>
+                    <button class="delete_btn btn btn-sm btn-danger" data-id="{{this.id}}">Delete</button>
+                </li>
+            {{/if}}
+        {{/each}}
+    </ul>
 
     <form>
-        <div class="submit">
-            <input class="burgerInput" type="text">
-            <button type="submit" class="submit btn-primary">submit</button>
-        </div>
+        <input class="burgerInput" type="text">
+        <button type="submit" class="submit btn-primary">submit</button>
         <p>Enter a burger you want to eat Click the "Submit" button</p>
     </form>
 </div>
