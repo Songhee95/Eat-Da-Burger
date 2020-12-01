@@ -10,11 +10,8 @@ $(function(){
         $.ajax("/api/burgers", {
             type: "POST",
             data: transferData
-        }).then(
-            function(){
-                location.reload();
-            }
-        )
+        })
+        location.reload();
     })
 
     $('.devour_btn').on('click', (event)=>{
