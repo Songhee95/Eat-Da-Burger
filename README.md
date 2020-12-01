@@ -16,8 +16,7 @@ Eat-Da-Burger is a restaurant app that lets users input the names of burgers the
 [Github](https://github.com/Songhee95/Eat-Da-Burger)
 
 ## Usage
-![GitHub Logo](./images/1.PNG)
-![GitHub Logo](./images/2.PNG)
+![GitHub Logo](./public/image/Burger.PNG)
 
 ## Questions
 If you have any questions or need any help, feel free to contact me here <br>
