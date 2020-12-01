@@ -2,7 +2,7 @@ const express = require('express');
 const PORT = process.env.PORT || 8080;
 const app = express();
 
-app.set("port", (process.env.POR || 8080));
+app.set("port", (process.env.PORT || 8080));
 
 app.use(express.static("public"));
 app.use(express.urlencoded({extended: true}));
