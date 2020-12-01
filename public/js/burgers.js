@@ -1,5 +1,5 @@
 $(function(){
-    $(".submit").on("click", () =>{
+    $(".create-form").on("submit", () =>{
         console.log('button clicked!!')
         const userInput = $(".burgerInput").val();
         console.log(userInput);
@@ -11,7 +11,7 @@ $(function(){
             type: "POST",
             data: transferData
         })
-        location.reload();
+        location.reload
     })
 
     $('.devour_btn').on('click', (event)=>{
