@@ -1,0 +1,9 @@
+body{
+    background-image: url("../image/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+p{
+    font-size: large;
+    font-weight: bold;
+}
