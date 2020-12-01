@@ -11,7 +11,7 @@ $(function(){
             type: "POST",
             data: transferData
         })
-        location.reload
+        location.reload();
     })
 
     $('.devour_btn').on('click', (event)=>{
