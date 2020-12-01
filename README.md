@@ -10,6 +10,7 @@ Eat-Da-Burger is a restaurant app that lets users input the names of burgers the
 
 ## URLs
 1. Deployed URL (Heroku):
+    (https://powerful-journey-66331.herokuapp.com/)
 
 2. Github Page URL: 
 [Github](https://github.com/Songhee95/Eat-Da-Burger)
