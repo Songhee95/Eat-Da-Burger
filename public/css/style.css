@@ -3,7 +3,39 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+h1{
+    padding: 30px;
+}
 p{
     font-size: large;
     font-weight: bold;
+}
+i{
+    font-size: 30px;
+}
+input{
+    border: 0.1px solid brown;
+    border-radius:0.2rem;
+}
+input:focus{
+    outline: none;
+}
+form p{
+    padding-top: 20px;
+    font-size: medium;
+    font-weight: 400;
+    color: rgb(17, 16, 16);
+}
+form{
+    margin-top: 20px;
+}
+.submit{
+    border-radius:2rem;
+}
+.display_burger p, .display_devour p{
+    border-radius: 1rem;
+}
+.display_burger p button, .display_devour p button{
+    border-radius: 3rem;
+    margin-left:50px;
 }
